@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-casa">
+      <rect width="80" height="80"/>
+    </clipPath>
+  </defs>
+  <g id="casa" clip-path="url(#clip-casa)">
+    <g id="casa-2" data-name="casa" transform="translate(11.334 -13.931)">
+      <g id="Grupo_240" data-name="Grupo 240" transform="translate(6.81 49.119)">
+        <g id="Grupo_239" data-name="Grupo 239">
+          <path id="Trazado_4820" data-name="Trazado 4820" d="M101.455,211.786v26.335H91.511v-11.39a1.808,1.808,0,0,0-1.808-1.808H76.988a1.808,1.808,0,0,0-1.808,1.808v11.39H65.3V211.786H61.681v28.143a1.808,1.808,0,0,0,1.808,1.808h13.5a1.808,1.808,0,0,0,1.808-1.808v-11.39h9.1v11.39a1.808,1.808,0,0,0,1.808,1.808h13.559a1.808,1.808,0,0,0,1.808-1.808V211.786Z" transform="translate(-61.681 -211.786)" fill="#42d2c7"/>
+        </g>
+      </g>
+      <g id="Grupo_242" data-name="Grupo 242" transform="translate(0 28.931)">
+        <g id="Grupo_241" data-name="Grupo 241">
+          <path id="Trazado_4821" data-name="Trazado 4821" d="M55.955,53.946,29.74,29.419a1.808,1.808,0,0,0-2.459-.011L.585,53.935A1.808,1.808,0,0,0,3.031,56.6L28.494,33.2,53.485,56.586a1.808,1.808,0,0,0,2.47-2.64Z" transform="translate(0 -28.931)" fill="#42d2c7"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

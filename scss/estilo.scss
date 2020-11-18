@@ -1,0 +1,362 @@
+/*IMPORT*/
+@import "colores";
+@import "titulos";
+
+/*VARIABLES*/
+$myFont:'Rubik',sans-serif;
+$Sobracards:5px 5px 40px #ccc;
+
+
+
+
+/*GENERAL*/
+
+
+html{
+font-family: $myFont;
+}
+
+body{
+margin:0px;
+}
+
+h1{
+color:$colorH1;
+font-weight:600;
+}
+p{
+font-size:$textoNormal;
+color:$textoColorNormal;
+}
+
+.cajaBlanca{
+	background-color:white;
+	box-shadow:$Sobracards;
+}
+
+/*HEADER BLOQUE*/
+
+.header__logo{
+	img{height:85px;
+		width: auto;}	
+}
+
+
+ /* BARRA NAVEGACIÓN*/
+
+.navbar{
+	background-color:#3A4CA1;
+	padding:10px 0px 20px 0px;
+}
+
+nav ul li{
+	color:white;
+	text-transform: uppercase;
+}
+
+
+
+/*SLIDER-ANIDACIÓN*/
+
+#slider{
+	background-image: url("../images/slider01.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:500px;
+
+	h3{color:white;
+	font-weight:800;
+	font-size:$tituloslider;}
+
+		.textoSlider{
+			margin-top:160px;}
+}
+
+
+/*BLOQUE BAJO SLIDER*/
+
+.bajoSlider{
+	background-color:#E1E9EB;
+	height: 200px;
+
+	.bajoSlider__titulo {
+		color: #3A4CA1;
+	 	text-transform: uppercase;
+	 	font-style: normal;
+	 	font-size: 1.2rem;
+	 	font-weight: 700;
+	}
+
+	.bajoSlider__icono {
+	 	height:60px;
+	 }
+}
+
+/*INSTITUCIONAL-ANIDACIÓN*/
+
+#institucional{
+	background-image: linear-gradient(to right,#f1fdfc, white);
+	 img{
+	 height:400px;
+}
+}
+.institucional__preTitulo{
+	font-size:$textoNormal;
+	color:$colorCeleste;
+	font-weight:400;
+}
+
+
+/*ESPECIALIDADES-BLOQUE Y ANIDACIÓN*/
+
+#especialidades{
+	background-color: #CBF6FE;
+		col{
+		height:600px;}
+}
+
+.especialidades__titulo h3{
+	font-size:$tituloSecciones;
+	font-weight:$weight-tiuloSecciones;
+	color:$colorAzul;
+}
+
+.especialidades__lista{
+	width:65%;
+}
+
+.especialidades__imagen img{
+	height:600px;
+}
+.especialidades__item{
+	background-color:white;
+	border-radius:15px;
+	padding:10px 15px 10px 5px;
+	margin-top:15px;
+	margin-right:180px;
+	width:100%;
+	
+	img{
+		height: 40px;
+		padding-right: 20px;}
+
+	h5{
+	font-size:$titulochico;
+	font-weight:500;
+	color:$colorTurqueza;
+	padding-right:15px;}
+}
+
+
+
+
+/*BLOQUE BLOG*/
+
+
+.blog__noticia{
+	border:none;
+	box-shadow:$Sobracards;
+}
+
+.blog__imagen{
+	margin-top:160px;
+}
+.blog__preTitulo{
+	font-size:$textoNormal;
+	color:$colorCeleste;
+}
+.blog__titulo{
+	font-size:$tituloSecciones;
+	font-weight:$weight-tiuloSecciones;
+	color:$colorAzul;
+}
+.blog__noticia--destacada{
+	border:5px solid #3A4CA1;
+}
+.btn-primary--chico{
+	font-size:$textoChico;
+}
+.blog__tituloNota{
+	font-size:$titulochico;
+	font-weight:600;
+}
+
+/*BLOQUE LABORATORIO Y ANIDACIÓN*/
+
+
+.laboratorio{
+	background-color:$colorFondoCele;
+	col{
+	height:600px;}
+	ul {
+	width:50%;}
+}
+.blog__preTitulo{
+	color:$colorCeleste;
+	font-weight:400;
+	
+}
+.blog__Titulo{
+	color:$colorAzul;
+	font-weight:600;
+}
+
+.laboratorio_imagen img{
+	height:600px;
+}
+
+/*EXTEND*/
+.especialidades__item-lab{
+	@extend .especialidades__item;	
+}
+
+.laboratorio_texto{
+	margin-right:180px;
+
+}
+.laboratorio_texto--color{
+	color:$colorAzul;
+	font-size:$tituloSecciones;
+}
+
+/*BLOQUE NEWSLETTER*/
+
+.newsletters{
+	background-color:$colorCeleste;
+	height:130px;
+}
+.newsletters__texto{
+	font-size:$titulochico;
+}
+
+.newsletters__campo{
+	
+}
+
+.sinpadding [class*="col-"] {
+    padding: 0;
+}
+
+
+
+/*FOOTER*/
+
+footer{ 
+
+	h5{
+	color:$colorCeleste;
+ 	text-transform: uppercase;
+ 	font-style: normal;
+ 	font-size: 1.2rem;
+ 	font-weight: 700;}
+
+	li a{
+	color:$textoGris;}
+
+	li a:hover{
+	color:$colorTurqueza;}
+}
+
+
+.footer__Logo{
+	margin-left:80px;
+}
+
+
+/*CAROUSEL*/
+
+.carousel-caption{
+	margin-bottom:200px;
+	width:500px;
+}
+
+/*BOTONES Y ENLACES*/
+
+.btn-primary{
+	background-color:$colorAzul;
+	font-size:$titulochico;
+	font-weight:500;
+	padding:5px 15px 5px 15px;
+	border-radius:5px;
+	border:none;
+}
+
+.btn-primary:hover{
+	background-color:#19224c;
+}
+
+/*EACH y MAPA*/
+$enlaces:( enlaceFotter: 1rem, enlaceSimple: 1rem, botonChico: 1rem, botonMedio: 1.4rem, botonGrande: 1.6rem);
+
+/*Creamos el bucle para usar los valores del mapa*/
+@each $boton, $tamañoFont in $enlaces {
+   .btn--#{$boton} {
+       font-size: $tamañoFont;
+   }
+}
+
+/*CABECERAS*/
+
+.cabecera{ 
+color:white; 
+height:250px;
+padding-left:150px;
+padding-top:50px;
+line-height: 5px;
+margin-bottom:60px;
+}
+
+.cabecera--espe{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraEspe.png");
+	background-size: cover;
+}
+
+.cabecera--lab{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraContacto.png");
+	background-size: cover;
+}
+
+.cabecera--cont{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraLab.png");
+	background-size: cover;
+}
+
+.cabecera--equipo{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraStaff.png");
+	background-size: cover;
+}
+
+
+.cabecera--turnos{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraTurnos.png");
+	background-size: cover;
+}
+
+
+/*ESPECIALIDADES*/
+
+
+.cardEspecialidad__imagen img{
+	width: 440px;
+	height:440px;
+}
+
+.card{
+	border:none;	
+}
+
+.cardEspecialidad{
+	@extend .cajaBlanca;
+	margin:10px;
+	margin-bottom:50px;
+}
+
+.cardEspecialidad__texto h4{
+	font-size:$tituloSecciones;
+	color:$colorAzul;
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="101" viewBox="0 0 104 101">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconobajoslider01);
+      }
+
+      .cls-2 {
+        fill: #3a4ca1;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-iconobajoslider01">
+      <rect width="104" height="101"/>
+    </clipPath>
+  </defs>
+  <g id="iconobajoslider01" class="cls-1">
+    <g id="Grupo_227" data-name="Grupo 227" transform="translate(-1384 -937)">
+      <circle id="Elipse_34" data-name="Elipse 34" class="cls-2" cx="48.5" cy="48.5" r="48.5" transform="translate(1388 939)"/>
+      <g id="matraz" transform="translate(1330.317 948)">
+        <path id="Trazado_4742" data-name="Trazado 4742" class="cls-3" d="M193.016,74.032h4.065a1.016,1.016,0,1,0,0-2.032h-4.065a1.016,1.016,0,0,0,0,2.032Z" transform="translate(-93.686 -55.871)"/>
+        <path id="Trazado_4743" data-name="Trazado 4743" class="cls-3" d="M193.016,98.032h4.065a1.016,1.016,0,1,0,0-2.032h-4.065a1.016,1.016,0,0,0,0,2.032Z" transform="translate(-93.686 -76.823)"/>
+        <path id="Trazado_4744" data-name="Trazado 4744" class="cls-3" d="M193.016,122.032h4.065a1.016,1.016,0,0,0,0-2.032h-4.065a1.016,1.016,0,0,0,0,2.032Z" transform="translate(-93.686 -97.774)"/>
+        <path id="Trazado_4745" data-name="Trazado 4745" class="cls-3" d="M127.338,57.973,117.62,37.242V14.1a3.048,3.048,0,0,0,0-6.1H95.265a3.048,3.048,0,0,0,0,6.1V37.242L85.547,57.973A9.145,9.145,0,0,0,93.827,71h25.23a9.145,9.145,0,0,0,8.28-13.027ZM94.249,11.048a1.018,1.018,0,0,1,1.016-1.016H117.62a1.016,1.016,0,0,1,0,2.032H95.265A1.018,1.018,0,0,1,94.249,11.048ZM115.588,14.1v18.76a9.138,9.138,0,0,1-2.079-.427,12.552,12.552,0,0,0-7.358,0,10.538,10.538,0,0,1-6.191,0,10.9,10.9,0,0,0-2.662-.517V14.1Zm9.473,51.574a7.077,7.077,0,0,1-6,3.3H93.827a7.113,7.113,0,0,1-6.44-10.132L97.2,37.9a1.02,1.02,0,0,0,.1-.432V33.949a9.138,9.138,0,0,1,2.079.427,12.548,12.548,0,0,0,7.357,0,10.538,10.538,0,0,1,6.191,0,10.908,10.908,0,0,0,2.664.517v2.575a1.02,1.02,0,0,0,.1.432L125.5,58.836a7.078,7.078,0,0,1-.437,6.835Z"/>
+        <path id="Trazado_4746" data-name="Trazado 4746" class="cls-3" d="M245.21,456H233.016a1.016,1.016,0,1,0,0,2.032H245.21a1.016,1.016,0,1,0,0-2.032Z" transform="translate(-128.606 -391.097)"/>
+        <path id="Trazado_4747" data-name="Trazado 4747" class="cls-3" d="M354.032,456h-1.016a1.016,1.016,0,1,0,0,2.032h1.016a1.016,1.016,0,0,0,0-2.032Z" transform="translate(-233.364 -391.097)"/>
+      </g>
+    </g>
+  </g>
+</svg>

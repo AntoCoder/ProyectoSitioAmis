@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*IMPORT*/
+/*VARIABLES*/
+/*GENERAL*/
+html {
+  font-family: "Rubik", sans-serif; }
+
+body {
+  margin: 0px; }
+
+h1 {
+  color: #3a4ca1;
+  font-weight: 600; }
+
+p {
+  font-size: 1rem;
+  color: #6c757d; }
+
+.cajaBlanca, .cardEspecialidad {
+  background-color: white;
+  box-shadow: 5px 5px 40px #ccc; }
+
+/*HEADER BLOQUE*/
+.header__logo img {
+  height: 85px;
+  width: auto; }
+
+/* BARRA NAVEGACIÓN*/
+.navbar {
+  background-color: #3A4CA1;
+  padding: 10px 0px 20px 0px; }
+
+nav ul li {
+  color: white;
+  text-transform: uppercase; }
+
+/*SLIDER-ANIDACIÓN*/
+#slider {
+  background-image: url("../images/slider01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px; }
+  #slider h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 1.8rem; }
+  #slider .textoSlider {
+    margin-top: 160px; }
+
+/*BLOQUE BAJO SLIDER*/
+.bajoSlider {
+  background-color: #E1E9EB;
+  height: 200px; }
+  .bajoSlider .bajoSlider__titulo {
+    color: #3A4CA1;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 700; }
+  .bajoSlider .bajoSlider__icono {
+    height: 60px; }
+
+/*INSTITUCIONAL-ANIDACIÓN*/
+#institucional {
+  background-image: linear-gradient(to right, #f1fdfc, white); }
+  #institucional img {
+    height: 400px; }
+
+.institucional__preTitulo {
+  font-size: 1rem;
+  color: #00c5e9;
+  font-weight: 400; }
+
+/*ESPECIALIDADES-BLOQUE Y ANIDACIÓN*/
+#especialidades {
+  background-color: #CBF6FE; }
+  #especialidades col {
+    height: 600px; }
+
+.especialidades__titulo h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3a4ca1; }
+
+.especialidades__lista {
+  width: 65%; }
+
+.especialidades__imagen img {
+  height: 600px; }
+
+.especialidades__item, .especialidades__item-lab {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 15px 10px 5px;
+  margin-top: 15px;
+  margin-right: 180px;
+  width: 100%; }
+  .especialidades__item img, .especialidades__item-lab img {
+    height: 40px;
+    padding-right: 20px; }
+  .especialidades__item h5, .especialidades__item-lab h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #48d8ce;
+    padding-right: 15px; }
+
+/*BLOQUE BLOG*/
+.blog__noticia {
+  border: none;
+  box-shadow: 5px 5px 40px #ccc; }
+
+.blog__imagen {
+  margin-top: 160px; }
+
+.blog__preTitulo {
+  font-size: 1rem;
+  color: #00c5e9; }
+
+.blog__titulo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3a4ca1; }
+
+.blog__noticia--destacada {
+  border: 5px solid #3A4CA1; }
+
+.btn-primary--chico {
+  font-size: 0.8rem; }
+
+.blog__tituloNota {
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+/*BLOQUE LABORATORIO Y ANIDACIÓN*/
+.laboratorio {
+  background-color: #cbf6fe; }
+  .laboratorio col {
+    height: 600px; }
+  .laboratorio ul {
+    width: 50%; }
+
+.blog__preTitulo {
+  color: #00c5e9;
+  font-weight: 400; }
+
+.blog__Titulo {
+  color: #3a4ca1;
+  font-weight: 600; }
+
+.laboratorio_imagen img {
+  height: 600px; }
+
+/*EXTEND*/
+.laboratorio_texto {
+  margin-right: 180px; }
+
+.laboratorio_texto--color {
+  color: #3a4ca1;
+  font-size: 1.8rem; }
+
+/*BLOQUE NEWSLETTER*/
+.newsletters {
+  background-color: #00c5e9;
+  height: 130px; }
+
+.newsletters__texto {
+  font-size: 1.3rem; }
+
+.sinpadding [class*="col-"] {
+  padding: 0; }
+
+/*FOOTER*/
+footer h5 {
+  color: #00c5e9;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+footer li a {
+  color: #ccc; }
+
+footer li a:hover {
+  color: #48d8ce; }
+
+.footer__Logo {
+  margin-left: 80px; }
+
+/*CAROUSEL*/
+.carousel-caption {
+  margin-bottom: 200px;
+  width: 500px; }
+
+/*BOTONES Y ENLACES*/
+.btn-primary {
+  background-color: #3a4ca1;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  border: none; }
+
+.btn-primary:hover {
+  background-color: #19224c; }
+
+/*EACH y MAPA*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--enlaceFotter {
+  font-size: 1rem; }
+
+.btn--enlaceSimple {
+  font-size: 1rem; }
+
+.btn--botonChico {
+  font-size: 1rem; }
+
+.btn--botonMedio {
+  font-size: 1.4rem; }
+
+.btn--botonGrande {
+  font-size: 1.6rem; }
+
+/*CABECERAS*/
+.cabecera, .cabecera--espe, .cabecera--lab, .cabecera--cont, .cabecera--equipo, .cabecera--turnos {
+  color: white;
+  height: 250px;
+  padding-left: 150px;
+  padding-top: 50px;
+  line-height: 5px;
+  margin-bottom: 60px; }
+
+.cabecera--espe {
+  background-image: url("../images/CabeceraEspe.png");
+  background-size: cover; }
+
+.cabecera--lab {
+  background-image: url("../images/CabeceraContacto.png");
+  background-size: cover; }
+
+.cabecera--cont {
+  background-image: url("../images/CabeceraLab.png");
+  background-size: cover; }
+
+.cabecera--equipo {
+  background-image: url("../images/CabeceraStaff.png");
+  background-size: cover; }
+
+.cabecera--turnos {
+  background-image: url("../images/CabeceraTurnos.png");
+  background-size: cover; }
+
+/*ESPECIALIDADES*/
+.cardEspecialidad__imagen img {
+  width: 440px;
+  height: 440px; }
+
+.card {
+  border: none; }
+
+.cardEspecialidad {
+  margin: 10px;
+  margin-bottom: 50px; }
+
+.cardEspecialidad__texto h4 {
+  font-size: 1.8rem;
+  color: #3a4ca1; }

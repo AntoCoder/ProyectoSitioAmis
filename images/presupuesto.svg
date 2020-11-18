@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-presupuesto">
+      <rect width="80" height="80"/>
+    </clipPath>
+  </defs>
+  <g id="presupuesto" clip-path="url(#clip-presupuesto)">
+    <g id="presupuesto-2" data-name="presupuesto" transform="translate(-30.199 12.667)">
+      <path id="Trazado_4818" data-name="Trazado 4818" d="M92.152,14.208,78.413.47A1.6,1.6,0,0,0,77.28,0H54.1a5.9,5.9,0,0,0-5.9,5.9V48.828a5.9,5.9,0,0,0,5.9,5.9H86.725a5.9,5.9,0,0,0,5.9-5.9V15.341a1.6,1.6,0,0,0-.47-1.134ZM78.883,5.474l8.264,8.264H81.573a2.693,2.693,0,0,1-2.69-2.69Zm7.842,46.045H54.1a2.693,2.693,0,0,1-2.69-2.69V5.9a2.693,2.693,0,0,1,2.69-2.69h21.58v7.842a5.9,5.9,0,0,0,5.9,5.9h7.842V48.828A2.693,2.693,0,0,1,86.725,51.518Z" transform="translate(0 0)" fill="#42d2c7"/>
+      <path id="Trazado_4819" data-name="Trazado 4819" d="M197.838,199.441h6.869a1.6,1.6,0,1,0,0-3.207h-3.549V194.4a1.6,1.6,0,0,0-3.207,0v1.832h-.114a5.038,5.038,0,1,0,0,10.075h3.434a1.832,1.832,0,0,1,0,3.663H194.4a1.6,1.6,0,0,0,0,3.207h3.549v1.831a1.6,1.6,0,0,0,3.207,0v-1.831h.114a5.038,5.038,0,0,0,0-10.076h-3.435a1.831,1.831,0,1,1,0-3.662Z" transform="translate(-129.144 -172.193)" fill="#42d2c7"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="101" viewBox="0 0 104 101">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconobajoslider02);
+      }
+
+      .cls-2 {
+        fill: #3a4ca1;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-iconobajoslider02">
+      <rect width="104" height="101"/>
+    </clipPath>
+  </defs>
+  <g id="iconobajoslider02" class="cls-1">
+    <g id="Grupo_227" data-name="Grupo 227" transform="translate(-1384 -937)">
+      <circle id="Elipse_34" data-name="Elipse 34" class="cls-2" cx="48.5" cy="48.5" r="48.5" transform="translate(1388 939)"/>
+    </g>
+    <g id="hospital" transform="translate(28 26)">
+      <g id="Grupo_138" data-name="Grupo 138">
+        <g id="Grupo_137" data-name="Grupo 137">
+          <path id="Trazado_4748" data-name="Trazado 4748" class="cls-3" d="M24.5,0A24.5,24.5,0,1,0,49,24.5,24.515,24.515,0,0,0,24.5,0Zm0,46.875A22.375,22.375,0,1,1,46.875,24.5,22.4,22.4,0,0,1,24.5,46.875Z"/>
+        </g>
+      </g>
+      <g id="Grupo_140" data-name="Grupo 140" transform="translate(10.686 10.686)">
+        <g id="Grupo_139" data-name="Grupo 139">
+          <path id="Trazado_4749" data-name="Trazado 4749" class="cls-3" d="M98.966,80.9H91.528V73.463A1.058,1.058,0,0,0,90.465,72.4h-8.5A1.058,1.058,0,0,0,80.9,73.463V80.9H73.463A1.058,1.058,0,0,0,72.4,81.964v8.5a1.058,1.058,0,0,0,1.063,1.063H80.9v7.439a1.058,1.058,0,0,0,1.063,1.063h8.5a1.058,1.058,0,0,0,1.063-1.063V91.528h7.439a1.058,1.058,0,0,0,1.063-1.063v-8.5A1.141,1.141,0,0,0,98.966,80.9Zm-1,8.5h-7.5A1.058,1.058,0,0,0,89.4,90.465V97.9H83.027V90.465A1.058,1.058,0,0,0,81.964,89.4H74.525V83.027h7.439a1.058,1.058,0,0,0,1.063-1.063V74.525h6.435v7.439a1.058,1.058,0,0,0,1.063,1.063h7.439Z" transform="translate(-72.4 -72.4)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
