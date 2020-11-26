@@ -5,6 +5,7 @@
 /*VARIABLES*/
 $myFont:'Rubik',sans-serif;
 $Sobracards:5px 5px 40px #ccc;
+$Sombraobjetos:0 0 10px 3px rgba(108,98,98,0.2);
 
 
 
@@ -42,6 +43,7 @@ color:$textoColorNormal;
 }
 
 
+
  /* BARRA NAVEGACIÓN*/
 
 .navbar{
@@ -53,6 +55,7 @@ nav ul li{
 	color:white;
 	text-transform: uppercase;
 }
+
 
 
 
@@ -148,7 +151,39 @@ nav ul li{
 }
 
 
+/* STAFF */ 
 
+
+.todoElStaff article.itemStaff img {
+	width:100%;
+	height:100%;
+	margin-bottom:30px;	
+}
+
+.todoElStaff article{
+	background-color: white;
+	box-shadow: 5px 5px 40px #ccc;
+	padding-bottom: 10px;
+}
+
+.todoElStaff{
+	margin-bottom:80px;
+}
+
+
+.todoElStaff h4{
+	font-size:1.5rem;
+	font-weight: 600;
+	color:#3A4CA1;
+	text-align: center;
+}
+
+.todoElStaff p{
+	font-size: 0.8rem;
+	font-weight: 300;
+	color:#919191;
+	text-align: center;
+}
 
 /*BLOQUE BLOG*/
 
@@ -189,7 +224,7 @@ nav ul li{
 	col{
 	height:600px;}
 	ul {
-	width:50%;}
+	width:80%;}
 }
 .blog__preTitulo{
 	color:$colorCeleste;
@@ -200,23 +235,31 @@ nav ul li{
 	color:$colorAzul;
 	font-weight:600;
 }
-
-.laboratorio_imagen img{
-	height:600px;
+.laboratorio__imagen img{
+		height:600px;
+	}
+.laboratorio__contenido{
+	width:80%;
+	margin-top:35px;
 }
+
+
 
 /*EXTEND*/
 .especialidades__item-lab{
 	@extend .especialidades__item;	
 }
 
-.laboratorio_texto{
-	margin-right:180px;
+.laboratorio_texto h3{
+	margin-bottom:20px;
+	width:80%;
+	margin-right:25px;
 
 }
 .laboratorio_texto--color{
 	color:$colorAzul;
 	font-size:$tituloSecciones;
+	line-height:1.2px;
 }
 
 /*BLOQUE NEWSLETTER*/
@@ -229,14 +272,36 @@ nav ul li{
 	font-size:$titulochico;
 }
 
-.newsletters__campo{
-	
-}
-
 .sinpadding [class*="col-"] {
     padding: 0;
 }
 
+.newsletters__form {
+	boxshadow:$Sobracards;
+	.form-control{
+	background: white;
+    border: 1px solid transparent;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: $itemsIcono;
+    border-radius: 5px 0px 0px 5px; }
+    .submit{
+    	color: #fff;
+    	background: $colorAzul;
+    	border-radius: 0px 5px 5px 0px;
+    	border: 1px solid transparent;
+    	&:hover{
+				cursor: pointer;
+				background: $colorHoverBoton;
+			}
+    	}   
+}
+
+
+@media (max-width: 767.98px){
+	.newsletters{
+	height:250px;
+}
+}
 
 
 /*FOOTER*/
@@ -244,7 +309,7 @@ nav ul li{
 footer{ 
 
 	h5{
-	color:$colorCeleste;
+	color:$colorAzul;
  	text-transform: uppercase;
  	font-style: normal;
  	font-size: 1.2rem;
@@ -254,7 +319,14 @@ footer{
 	color:$textoGris;}
 
 	li a:hover{
-	color:$colorTurqueza;}
+	color:$colorTurqueza;
+	text-decoration:none;}
+
+	span{
+		color:$colorTurqueza;
+		text-transform: uppercase;
+		font-size:$textoChico;
+	}
 }
 
 
@@ -262,6 +334,39 @@ footer{
 	margin-left:80px;
 }
 
+.footer__social i{
+	color:$colorTurqueza;
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	background:$colorFondoCele;
+	text-align:center;
+	margin-right:8px;
+	line-height: 40px;
+	&:hover {
+				color: #fff;
+				background:$colorAzul;
+			}
+
+}
+#back-top{
+    background: $colorAzul;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;    
+    font-size:$titulochico;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow:$Sombraobjetos ;
+    i{
+    color: #fff;
+    font-size:$titulochico;
+    }
+}
 
 /*CAROUSEL*/
 
@@ -284,6 +389,7 @@ footer{
 .btn-primary:hover{
 	background-color:#19224c;
 }
+
 
 /*EACH y MAPA*/
 $enlaces:( enlaceFotter: 1rem, enlaceSimple: 1rem, botonChico: 1rem, botonMedio: 1.4rem, botonGrande: 1.6rem);
@@ -359,4 +465,285 @@ margin-bottom:60px;
 .cardEspecialidad__texto h4{
 	font-size:$tituloSecciones;
 	color:$colorAzul;
+	margin-top:25px;
+}
+
+
+#textoPresentacionLab h3{
+	font-size:$tituloSecciones;
+	color:$colorAzul;
+
+}
+#serviciosPacientes h3{
+	font-size:$tituloSecciones;
+	color:$colorAzul;
+}
+
+.PresentacionLab__img img{
+	height:300px;
+	}
+
+
+/* DATOS DE CONTACTO */ 
+
+.infoFormTurnos__form{
+margin-bottom:60px;
+}
+.infoFormTurnos__datos{
+	background-color: #F9F9F9;
+	width: 450px;
+	padding:20px;
+
+}
+.infoFormTurnos__texto{
+	width: 300px;
+	margin:10px;
+	text-align:center;
+	margin-left:15%;
+}
+
+.infoFormTurnos__horarios{
+	background-color: #0CCCBE;
+	width: 450px;
+	padding:20px;
+}
+
+.infoFormTurnos__horarios p {
+	color:white;
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.infoFormTurnos__horarios h4 {
+	color:white;
+	font-weight: 500;
+	font-size: 1rem;
+	text-align: center;
+}
+
+
+
+.infoFormTurnos__form input{
+	background-color:#EFEFEF;
+	border-radius: 8px;
+	border:1px solid #EFEFEF;
+	height:40px;
+	width:75%;
+}
+.infoFormTurnos__form p{
+	font-size:1rem;
+	font-weight:500;
+	line-height: 1.2px;
+	margin-top:20px;
+
+}
+.infoFormTurnos__form .correo{
+	height:30px;
+}
+
+.infoFormTurnos__form select{
+	background-color:#EFEFEF;
+	border-radius: 8px;
+	border:1px solid #EFEFEF;
+	height:40px;
+}
+
+
+.infoFormTurnos__form input[type=submit]{
+	background-color:#3a4ca1;
+	font-size:1rem;
+	font-weight:200;
+	color:white;
+	border-radius: 5px;
+	width:40%;
+	height:40px;
+}
+.infoFormTurnos__form input[type=submit]:hover{
+	background-color:#19224c;
+}
+
+.infoFormTurnos__form input[type=reset]{
+	background-color:transparent;
+	font-size:1rem;
+	color:#3a4ca1;
+	font-weight:200;
+	border: 1px solid #3a4ca1;
+	border-radius:5px;
+	width:50%;
+	height:40px;
+}
+.infoFormTurnos__form input[type=reset]:hover{
+	background-color:#3a4ca1;
+	color:white;
+}
+
+/* FORMULARIOS */ 
+
+input{
+background-color:#EFEFEF;
+border-radius: 8px;
+border:1px solid #EFEFEF;
+}
+
+select {
+background-color:#EFEFEF;
+border-radius: 8px;
+border:1px solid #EFEFEF;
+width:37%;
+height:40px;
+}
+
+textarea{
+background-color:#EFEFEF;
+border-radius: 8px;
+border:1px solid #EFEFEF;
+width:75%;
+}
+
+
+ input:hover{
+	border:1px solid blue;
+}
+
+ input:focus{
+	border:1px solid blue;
+}
+ textarea:hover{
+	border:1px solid blue;
+}
+ textarea:focus{
+	border:1px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+
+	.header__cel{
+		display:none;
+	}
+
+	.header__mail{
+		display:none;
+	}
+	.header__boton{
+		display:none;
+	}
+	.nav-item{
+		padding-left:35px;
+	}
+	.navbar-toggler{
+		margin-left:85px;
+		border:none;
+	}
+	.carousel-caption{
+		width:200px;
+		bottom:-80px;
+		padding-top:35px;
+		width:200px;
+		height:200px;
+	}
+	h1{
+  	font-size:1.8rem;
+	}
+	p{
+  	line-height:20px;
+	}
+	#BajoSlider{
+	height:400px;
+	}
+	.laboratorio__contenido{
+	padding-left:180px;
+	}
+	.PresentacionLab__img img{
+	height:250px;
+	}
+
+}
+
+/*IPAD VERTICAL*/
+@media (min-width: 576px) and (max-width: 768px) {
+
+	.header__cel{
+		display:none;
+	}
+
+	.header__mail{
+		display:none;
+	}
+	.header__boton{
+		display:none;
+	}
+	.nav-item{
+		padding-left:35px;
+	}
+	.navbar-toggler{
+		margin-left:85px;
+		border:none;
+	}
+	.carousel-caption{
+	margin-bottom:180px;
+	margin-right:15px;
+	width:250px;
+	align-items:start;
+
+	}
+
+	#BajoSlider{
+	height:250px;
+	width:680px;
+	}
+	.laboratorio__contenido{
+	padding-left:50px;
+	}
+}
+
+
+/*LAPTOP*/
+
+@media (min-width: 768px) and (max-width: 1440px) {
+	.carousel-caption{
+		
+		width:500px;
+		margin-bottom: 35px;
+	}
+	.especialidades__imagen img{
+		height: 500px;
+	}
+	.laboratorio__imagen img{
+		height: 500px;
+	}
+}
+
+@media (min-width: 1440px){
+	.carousel-caption{
+	
+	width:500px;
+	margin-bottom: 200px;
+	}
 }

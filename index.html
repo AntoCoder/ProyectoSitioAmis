@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
      <!-- MI CSS -->
      <link rel="stylesheet" href="css/style.css">
+
      <title>Clinica Amis</title>
       <!-- Seo -->
      <meta name="description" content="Clínica Amis - Asistencia Médica Integral de la Salud - Zona Oeste Rosario. Todas las Especialidades en un solo lugar">
      <meta name="keywords" content="Clínica, Rosario, Zona Oeste, asistencia, Clínica Amis, Clínica Rosario, Clínica Zona Oeste, salud, Análisis de sangre, medicina, médicos, emergencias, salud, consultorios, doctores, resultados medicos ">
+     <!-- animacion -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -84,7 +88,7 @@
         
           <div class="carousel-caption text-left">
             <h2 class="text-light">Sacá tu turno Online</h2>
-            <p class="text-light">Gestione sus turnos de manera rápida y sencilla através de nuestra página web.También consulte por nuestras consultas online. Es importante cuidarnos.</p>
+            <p class="text-light">Gestione sus turnos de manera rápida y sencilla através de nuestra página web.También consulte por nuestras consultas online.</p>
             <p><a class="btn btn-primary btn--botonChico btn-lg" href="#" role="button">Sacá Turno</a></p>
           </div>
        
@@ -136,6 +140,7 @@
       		<span class="sr-only">Next</span>
     	</a>
 
+
 </div>
 
 
@@ -182,12 +187,19 @@
     			<div class="institucional__imagen mt-5 col-sm-6 col-lg-6 order-md-last order-sm-last order-last order-lg-1 pr-5 pl-5 imagenInst">
     			<img src="images/DocHome.png"class="align-self-center" alt="Doctor Fundador">
     			</div>
+    			
+    			
     			<div class="institucional__texto mt-5 col-sm-6 col-lg-6 order-md-first order-sm-first order-first order-lg-2 textoInst">
+            <div data-aos="fade-left">
     			<h6 class="institucional__preTitulo">QUIENES SOMOS</h6>
       			<h1>Bienvenidos a nuestra clínica. Su centro de salud preferido de Zona Oeste de Rosario.</h1>
       			<p>Gestione sus turnos de manera rápida y sencilla através de nuestra página web.También consulte por nuestras consultas online. Es importante cuidarnos.</p>
       			</div>
+            </div>
+      			
+
       		</div>
+
     	</div>
     </div>
 
@@ -209,7 +221,7 @@
 
 							<div class="row">
 									
-									<div class="col-md-6  col-12">
+									<div class="col-md-6 col-sm-12 col-12">
 						          <ul class="list-unstyled mx-auto especialidades__lista">
   										    <li class="media especialidades__item">
    							 			    <img src="images/Pediatría.png" class="" alt="...">
@@ -235,7 +247,7 @@
       						</div>
 
 
-      						<div class="col-md-6  col-12">
+      						<div class="col-md-6 col-sm-12 col-12">
 						          <ul class="list-unstyled mx-auto especialidades__lista">
   										     <li class="media especialidades__item">
    							 			     <img src="images/Odontología.png" class="" alt="...">
@@ -276,6 +288,7 @@
     <!-- Sección Blog -->
     <div id="blog" class="blog">
     	<div class="container">
+      <div data-aos="zoom-in">
     			<h6 class="mt-5 text-center blog__preTitulo" >BLOG</h6>
     			<h3 class="mb-5 text-center blog__titulo">Últimas novedades</h3>
     		
@@ -329,7 +342,8 @@
   						</div>
 					</div>
       			</div>
-      		</div>	
+      		</div>
+          </div>	
     	</div>
     </div>
 
@@ -338,14 +352,15 @@
     <!-- Sección Laboratorio-->
     <div id="laboratorio" class="container-fluid sinpadding laboratorio" >
 
-    	<div class="row">
+    	<div class="row justify-content-between">
 
 
-    				<div class="col-sm-6 col-lg-6 col-md-6 col-12 order-last order-lg-1 laboratorio_imagen">
+    				<div class="col-sm-4 col-lg-4 col-md-4 col-12 order-last order-lg-1 laboratorio__imagen">
     				<img src="images/labhomepage.png"class="rounded float-left" alt="Laboratorio">
     				</div>
+    				
 
-  					<div class="col-sm-6 col-lg-6 col-md-6 col-12 order-last order-lg-1 align-self-center">
+  					<div class="col-sm-12 col-lg-6 col-md-6 col-12 order-last order-lg-1 align-self-right laboratorio__contenido">
 						
  						<div class="text-left laboratorio_texto">
 						<h3 class="laboratorio_texto laboratorio_texto--color">Laboratorio de Análisis</h3>
@@ -384,34 +399,41 @@
 		</div>
 	</div>
 
-	<!-- Sección Newsletter -->
-    <div id="newsletters" class="cointainer-fluid newsletters">
-    	<div class="container">
-    		<div class="row">
+
+<!-- Sección Newsletter -->
+ <div id="newsletters" class="cointainer-fluid newsletters">
+    <div class="container">
+    	<div class="row">
     			
-    			<div class="col-md-6 col-sm-12 col-12 mt-5">
-      			<h4 class="text-light newsletters__texto">Suscribite a nuestro newsletter y mantenete al tanto de todas nuestras novedades</h4>
+    			<div class="col-md-6 col-sm-12 col-12 mt-5 text-left">
+      				<h4 class="text-light newsletters__texto">Suscribite a nuestro newsletter y mantenete al tanto de todas nuestras novedades</h4>
       			</div>
 
-      			<div class="col-md-6 col-sm-12 col-12 mt-5 newsletters__campo">
-      				<input class="form-control" type="text" placeholder="Suscribite con tu correo electrónico">
+      			<div class="col-md-6 col-sm-12 col-12 mt-5">
+      				<form action="#" class="newsletters__form">
+      					<div class="form-group d-flex ">
+		                	<input type="text" class="form-control" placeholder="Ingresa tu email">
+		                	<input type="submit" value="Subscrite" class="submit px-3">
+		              	</div>
+		            </form>
     			</div>
 
 
-      		</div>
-    	</div>
+      	</div>
     </div>
+</div>
 
 
 
-    <!-- Sección Footer -->
+<!-- Sección Footer -->
 
-    <footer class="container-fluid py-5 pl-5 pr-5 footer">
+<footer class="container-fluid py-5 pl-5 pr-5 footer">
   <div class="row">
 
     <div class="col-md-5 col-sm-12 col-12 mt-2 footer__logo">
-      <img src="images/LogoClinica.svg" alt="Amis" width="" height="80"><br><br><h6>Asistencia Médica Integral de la Salud Zona Oeste - Rosario </h6>
-      <small class="d-block mb-3 text-muted">&copy; 2020</small>
+      <img src="images/LogoClinica.svg" alt="Amis" width="" height="80"><br><br><span class="footer_descripcion">Asistencia Médica Integral de la Salud Zona Oeste - Rosario &copy; 2020 </span>
+
+      
     </div>
 
     <div class="col-md-2 col-sm-12 mt-2">
@@ -435,17 +457,17 @@
       </ul>
     </div>
 
-    <div class="col-md-2 col-sm-12 col-12 mt-2">
+    <div class="col-md-3 col-sm-12 col-12 mt-2">
       <h5>REDES SOCIALES</h5>
-      <ul class="list-inline">
-      <li class="list-inline-item"><a href="#"><img src="images/iconred01.png" alt="iconred01" width="30" height="30"></a></li>
-      <li class="list-inline-item"><a href="#"><img src="images/iconred02.png" alt="iconred01" width="30" height="30"></a></li>
-      <li class="list-inline-item"><a href="#"><img src="images/iconred02.png" alt="iconred01" width="30" height="30"></a></li>
+      <ul class="footer__social list-inline f-right">
+      		<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      		<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      		<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
+
   </div>
 </footer>
-
 
 
 
@@ -459,7 +481,15 @@
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+
+     <!-- font-awesome -->
+     <script src="https://kit.fontawesome.com/0448a3b695.js" crossorigin="anonymous"></script>
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+   
   </body>
 </html>
