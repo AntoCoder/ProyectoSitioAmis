@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*IMPORT*/
 /*VARIABLES*/
 /*GENERAL*/
@@ -7,7 +6,8 @@ html {
   font-family: "Rubik", sans-serif; }
 
 body {
-  margin: 0px; }
+  margin: 0px;
+  color: white; }
 
 h1 {
   color: #3a4ca1;
@@ -17,7 +17,7 @@ p {
   font-size: 1rem;
   color: #6c757d; }
 
-.cajaBlanca, .cardEspecialidad {
+.cajaBlanca, .cardEspecialidad, .serviciosPacientes__caja01 {
   background-color: white;
   box-shadow: 5px 5px 40px #ccc; }
 
@@ -26,14 +26,33 @@ p {
   height: 85px;
   width: auto; }
 
-/* BARRA NAVEGACIÓN*/
+/*BARRA DE NAVEGACIÓN*/
 .navbar {
   background-color: #3A4CA1;
-  padding: 10px 0px 20px 0px; }
+  padding: 10px 0px 20px 0px;
+  text-transform: uppercase; }
 
 nav ul li {
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  list-style: none; }
+
+.dropdown-menu {
+  margin-top: 20px;
+  border: 0px solid;
+  border-radius: none;
+  box-shadow: 5px 5px 40px #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .dropdown-menu show {
+    width: 50%; }
+
+a.dropdown-item:hover {
+  color: #00c5e9;
+  background-color: white; }
+
+ul.submenu {
+  padding: 0px; }
 
 /*SLIDER-ANIDACIÓN*/
 #slider {
@@ -84,26 +103,25 @@ nav ul li {
   color: #3a4ca1; }
 
 .especialidades__lista {
-  width: 65%; }
+  width: 95%; }
 
 .especialidades__imagen img {
-  height: 600px; }
+  height: 500px; }
 
 .especialidades__item, .especialidades__item-lab {
   background-color: white;
   border-radius: 15px;
-  padding: 10px 15px 10px 5px;
   margin-top: 15px;
   margin-right: 180px;
   width: 100%; }
   .especialidades__item img, .especialidades__item-lab img {
-    height: 40px;
-    padding-right: 20px; }
+    padding-right: 10px;
+    height: 70px; }
   .especialidades__item h5, .especialidades__item-lab h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #48d8ce;
-    padding-right: 15px; }
+    padding-right: 5px; }
 
 /* STAFF */
 .todoElStaff article.itemStaff img {
@@ -175,13 +193,16 @@ nav ul li {
   font-weight: 600; }
 
 .laboratorio__imagen img {
-  height: 600px; }
+  height: 500px; }
 
 .laboratorio__contenido {
   width: 80%;
   margin-top: 35px; }
 
 /*EXTEND*/
+.especialidades__item-lab img {
+  height: 40px; }
+
 .laboratorio_texto h3 {
   margin-bottom: 20px;
   width: 80%;
@@ -224,59 +245,6 @@ nav ul li {
   .newsletters {
     height: 250px; } }
 
-/*FOOTER*/
-footer h5 {
-  color: #3a4ca1;
-  text-transform: uppercase;
-  font-style: normal;
-  font-size: 1.2rem;
-  font-weight: 700; }
-
-footer li a {
-  color: #ccc; }
-
-footer li a:hover {
-  color: #48d8ce;
-  text-decoration: none; }
-
-footer span {
-  color: #48d8ce;
-  text-transform: uppercase;
-  font-size: 0.8rem; }
-
-.footer__Logo {
-  margin-left: 80px; }
-
-.footer__social i {
-  color: #48d8ce;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #cbf6fe;
-  text-align: center;
-  margin-right: 8px;
-  line-height: 40px; }
-  .footer__social i:hover {
-    color: #fff;
-    background: #3a4ca1; }
-
-#back-top {
-  background: #3a4ca1;
-  height: 50px;
-  width: 50px;
-  right: 31px;
-  bottom: 18px;
-  position: fixed;
-  font-size: 1.3rem;
-  text-align: center;
-  border-radius: 50%;
-  line-height: 48px;
-  border: 2px solid transparent;
-  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2); }
-  #back-top i {
-    color: #fff;
-    font-size: 1.3rem; }
-
 /*CAROUSEL*/
 .carousel-caption {
   margin-bottom: 200px;
@@ -294,6 +262,12 @@ footer span {
 .btn-primary:hover {
   background-color: #19224c; }
 
+a {
+  color: #48d8ce; }
+  a:hover {
+    color: #3a4ca1;
+    text-decoration: none; }
+
 /*EACH y MAPA*/
 /*Creamos el bucle para usar los valores del mapa*/
 .btn--enlaceFotter {
@@ -310,35 +284,6 @@ footer span {
 
 .btn--botonGrande {
   font-size: 1.6rem; }
-
-/*CABECERAS*/
-.cabecera, .cabecera--espe, .cabecera--lab, .cabecera--cont, .cabecera--equipo, .cabecera--turnos {
-  color: white;
-  height: 250px;
-  padding-left: 150px;
-  padding-top: 50px;
-  line-height: 5px;
-  margin-bottom: 60px; }
-
-.cabecera--espe {
-  background-image: url("../images/CabeceraEspe.png");
-  background-size: cover; }
-
-.cabecera--lab {
-  background-image: url("../images/CabeceraContacto.png");
-  background-size: cover; }
-
-.cabecera--cont {
-  background-image: url("../images/CabeceraLab.png");
-  background-size: cover; }
-
-.cabecera--equipo {
-  background-image: url("../images/CabeceraStaff.png");
-  background-size: cover; }
-
-.cabecera--turnos {
-  background-image: url("../images/CabeceraTurnos.png");
-  background-size: cover; }
 
 /*ESPECIALIDADES*/
 .cardEspecialidad__imagen img {
@@ -361,6 +306,9 @@ footer span {
   font-size: 1.8rem;
   color: #3a4ca1; }
 
+#serviciosPacientes {
+  background-color: #cbf6fe; }
+
 #serviciosPacientes h3 {
   font-size: 1.8rem;
   color: #3a4ca1; }
@@ -368,24 +316,27 @@ footer span {
 .PresentacionLab__img img {
   height: 300px; }
 
+.serviciosPacientes__caja01 {
+  padding: 20px;
+  height: 250px; }
+  .serviciosPacientes__caja01 h5 {
+    color: #48d8ce;
+    font-size: 1rem; }
+
 /* DATOS DE CONTACTO */
 .infoFormTurnos__form {
   margin-bottom: 60px; }
 
 .infoFormTurnos__datos {
   background-color: #F9F9F9;
-  width: 450px;
   padding: 20px; }
 
 .infoFormTurnos__texto {
-  width: 300px;
   margin: 10px;
-  text-align: center;
-  margin-left: 15%; }
+  text-align: center; }
 
 .infoFormTurnos__horarios {
-  background-color: #0CCCBE;
-  width: 450px;
+  background-color: #48d8ce;
   padding: 20px; }
 
 .infoFormTurnos__horarios p {
@@ -479,6 +430,105 @@ textarea:hover {
 textarea:focus {
   border: 1px solid blue; }
 
+/*CABECERAS*/
+.cabecera, .cabecera--espe, .cabecera--lab, .cabecera--cont, .cabecera--equipo, .cabecera--turnos {
+  color: white;
+  height: 250px;
+  padding-left: 150px;
+  padding-top: 50px;
+  line-height: 5px;
+  margin-bottom: 60px; }
+  .cabecera .breadcrumb, .cabecera--espe .breadcrumb, .cabecera--lab .breadcrumb, .cabecera--cont .breadcrumb, .cabecera--equipo .breadcrumb, .cabecera--turnos .breadcrumb {
+    color: white;
+    background-color: transparent;
+    padding: 1.2rem 0rem; }
+  .cabecera .breadcrumb-item a, .cabecera--espe .breadcrumb-item a, .cabecera--lab .breadcrumb-item a, .cabecera--cont .breadcrumb-item a, .cabecera--equipo .breadcrumb-item a, .cabecera--turnos .breadcrumb-item a {
+    color: white; }
+
+.breadcrumb-item a:hover {
+  color: #48d8ce; }
+
+.breadcrumb-item.active {
+  color: white; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+  content: ">"; }
+
+.cabecera--espe {
+  background-image: url("../images/CabeceraEspe.png");
+  background-size: cover; }
+
+.cabecera--lab {
+  background-image: url("../images/CabeceraContacto.png");
+  background-size: cover; }
+
+.cabecera--cont {
+  background-image: url("../images/CabeceraLab.png");
+  background-size: cover; }
+
+.cabecera--equipo {
+  background-image: url("../images/CabeceraStaff.png");
+  background-size: cover; }
+
+.cabecera--turnos {
+  background-image: url("../images/CabeceraTurnos.png");
+  background-size: cover; }
+
+/*FOOTER*/
+.ftco-footer {
+  padding: 5em 0 3em 0; }
+
+.footer {
+  padding: 5em 0 3em 0; }
+
+.footer__social i {
+  color: #48d8ce;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #cbf6fe;
+  text-align: center;
+  margin-right: 8px;
+  line-height: 40px; }
+  .footer__social i:hover {
+    color: #fff;
+    background: #3a4ca1; }
+
+.block-23 ul {
+  padding: 0; }
+  .block-23 ul li, .block-23 ul li > a {
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px; }
+  .block-23 ul li .icon, .block-23 ul li .text {
+    display: table-cell;
+    vertical-align: top; }
+  .block-23 ul li .icon {
+    width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+    color: #48d8ce; }
+
+footer h5 {
+  color: #3a4ca1;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+footer li a {
+  color: #ccc; }
+
+footer li a:hover {
+  color: #48d8ce;
+  text-decoration: none; }
+
+footer span {
+  color: #ccc;
+  font-size: 1rem; }
+
+/*RESPONSIVE*/
 @media (max-width: 576px) {
   .header__cel {
     display: none; }
@@ -506,9 +556,20 @@ textarea:focus {
   .laboratorio__contenido {
     padding-left: 180px; }
   .PresentacionLab__img img {
-    height: 250px; } }
+    height: 250px; }
+  .laboratorio_texto h3 {
+    line-height: normal; }
+  .imagenMobile {
+    display: none; }
+  .imagenDesktop {
+    display: none; }
+  .laboratorio__imagen img {
+    height: 450pxpx; }
+  .cabecera, .cabecera--espe, .cabecera--lab, .cabecera--cont, .cabecera--equipo, .cabecera--turnos {
+    padding-left: 20px;
+    padding-top: 50px; } }
 
-/*IPAD VERTICAL*/
+/*IPAD*/
 @media (min-width: 576px) and (max-width: 768px) {
   .header__cel {
     display: none; }
@@ -528,21 +589,57 @@ textarea:focus {
     align-items: start; }
   #BajoSlider {
     height: 250px;
-    width: 680px; }
+    width: 768px; }
   .laboratorio__contenido {
-    padding-left: 50px; } }
+    padding-left: 50px; }
+  .imagenDesktop {
+    display: none; }
+  .imagenMobilePhone {
+    display: none; }
+  .especialidades__item img, .especialidades__item-lab img {
+    height: 50px;
+    padding: 5; } }
+
+/*IPAD VERTICAL*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .laboratorio_texto h3 {
+    width: 100%;
+    margin-bottom: 30px; }
+  .laboratorio_texto p {
+    line-height: 18px; }
+  .laboratorio__imagen img {
+    border-radius: 50%; }
+  .btn-primary {
+    font-size: 1rem; }
+  .imagenDesktop {
+    display: none; }
+  .imagenMobilePhone {
+    display: none; }
+  #bajoSlider {
+    background-color: #E1E9EB;
+    width: 768px; }
+  .especialidades__item img, .especialidades__item-lab img {
+    height: 50px; } }
 
 /*LAPTOP*/
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 992px) and (max-width: 1440px) {
   .carousel-caption {
     width: 500px;
     margin-bottom: 35px; }
   .especialidades__imagen img {
-    height: 500px; }
+    margin-right: 0px; }
   .laboratorio__imagen img {
-    height: 500px; } }
+    margin-left: 0px; }
+  .imagenMobile {
+    display: none; }
+  .imagenMobilePhone {
+    display: none; } }
 
 @media (min-width: 1440px) {
   .carousel-caption {
     width: 500px;
-    margin-bottom: 200px; } }
+    margin-bottom: 200px; }
+  .imagenMobile {
+    display: none; }
+  .imagenMobilePhone {
+    display: none; } }

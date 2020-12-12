@@ -8,10 +8,7 @@ $Sobracards:5px 5px 40px #ccc;
 $Sombraobjetos:0 0 10px 3px rgba(108,98,98,0.2);
 
 
-
-
 /*GENERAL*/
-
 
 html{
 font-family: $myFont;
@@ -19,12 +16,14 @@ font-family: $myFont;
 
 body{
 margin:0px;
+color:white;
 }
 
 h1{
 color:$colorH1;
 font-weight:600;
 }
+
 p{
 font-size:$textoNormal;
 color:$textoColorNormal;
@@ -43,21 +42,41 @@ color:$textoColorNormal;
 }
 
 
-
- /* BARRA NAVEGACIÓN*/
+/*BARRA DE NAVEGACIÓN*/
 
 .navbar{
 	background-color:#3A4CA1;
 	padding:10px 0px 20px 0px;
-}
+	text-transform: uppercase;
+	}
 
 nav ul li{
 	color:white;
 	text-transform: uppercase;
+	list-style:none;
+	
+}
+
+.dropdown-menu{
+	margin-top:20px;
+	border:0px solid;
+	border-radius:none;
+	box-shadow:$Sobracards;
+	padding-top:15px;
+	padding-bottom:15px;
+	show{	
+	width: 50%;
+     }	
+ }
+a.dropdown-item:hover{
+	color:$colorCeleste;
+	background-color:white;
 }
 
 
-
+ul.submenu{
+	padding:0px;
+}
 
 /*SLIDER-ANIDACIÓN*/
 
@@ -74,6 +93,7 @@ nav ul li{
 		.textoSlider{
 			margin-top:160px;}
 }
+
 
 
 /*BLOQUE BAJO SLIDER*/
@@ -94,6 +114,7 @@ nav ul li{
 	 	height:60px;
 	 }
 }
+
 
 /*INSTITUCIONAL-ANIDACIÓN*/
 
@@ -125,29 +146,31 @@ nav ul li{
 }
 
 .especialidades__lista{
-	width:65%;
+	width:95%;
 }
 
 .especialidades__imagen img{
-	height:600px;
+	height:500px;
+
 }
+
+
 .especialidades__item{
 	background-color:white;
 	border-radius:15px;
-	padding:10px 15px 10px 5px;
 	margin-top:15px;
 	margin-right:180px;
 	width:100%;
 	
 	img{
-		height: 40px;
-		padding-right: 20px;}
+		padding-right:10px;
+		height:70px;}
 
 	h5{
-	font-size:$titulochico;
+	font-size:$textoNormal;
 	font-weight:500;
 	color:$colorTurqueza;
-	padding-right:15px;}
+	padding-right:5px;}
 }
 
 
@@ -236,7 +259,7 @@ nav ul li{
 	font-weight:600;
 }
 .laboratorio__imagen img{
-		height:600px;
+		height:500px;
 	}
 .laboratorio__contenido{
 	width:80%;
@@ -244,12 +267,15 @@ nav ul li{
 }
 
 
-
 /*EXTEND*/
 .especialidades__item-lab{
 	@extend .especialidades__item;	
 }
 
+.especialidades__item-lab img{
+height:40px;
+	
+}
 .laboratorio_texto h3{
 	margin-bottom:20px;
 	width:80%;
@@ -304,69 +330,17 @@ nav ul li{
 }
 
 
-/*FOOTER*/
-
-footer{ 
-
-	h5{
-	color:$colorAzul;
- 	text-transform: uppercase;
- 	font-style: normal;
- 	font-size: 1.2rem;
- 	font-weight: 700;}
-
-	li a{
-	color:$textoGris;}
-
-	li a:hover{
-	color:$colorTurqueza;
-	text-decoration:none;}
-
-	span{
-		color:$colorTurqueza;
-		text-transform: uppercase;
-		font-size:$textoChico;
-	}
-}
 
 
-.footer__Logo{
-	margin-left:80px;
-}
 
-.footer__social i{
-	color:$colorTurqueza;
-	width:40px;
-	height:40px;
-	border-radius: 50%;
-	background:$colorFondoCele;
-	text-align:center;
-	margin-right:8px;
-	line-height: 40px;
-	&:hover {
-				color: #fff;
-				background:$colorAzul;
-			}
 
-}
-#back-top{
-    background: $colorAzul;
-    height: 50px;
-    width: 50px;
-    right: 31px;
-    bottom: 18px;
-    position: fixed;    
-    font-size:$titulochico;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 48px;
-    border: 2px solid transparent;
-    box-shadow:$Sombraobjetos ;
-    i{
-    color: #fff;
-    font-size:$titulochico;
-    }
-}
+
+
+
+
+
+
+
 
 /*CAROUSEL*/
 
@@ -390,6 +364,13 @@ footer{
 	background-color:#19224c;
 }
 
+a{
+	color:$colorTurqueza;
+	&:hover{
+		color:$colorAzul;
+		text-decoration:none;
+	}
+}
 
 /*EACH y MAPA*/
 $enlaces:( enlaceFotter: 1rem, enlaceSimple: 1rem, botonChico: 1rem, botonMedio: 1.4rem, botonGrande: 1.6rem);
@@ -401,47 +382,6 @@ $enlaces:( enlaceFotter: 1rem, enlaceSimple: 1rem, botonChico: 1rem, botonMedio:
    }
 }
 
-/*CABECERAS*/
-
-.cabecera{ 
-color:white; 
-height:250px;
-padding-left:150px;
-padding-top:50px;
-line-height: 5px;
-margin-bottom:60px;
-}
-
-.cabecera--espe{
-	@extend .cabecera;
-	background-image: url("../images/CabeceraEspe.png");
-	background-size: cover;
-}
-
-.cabecera--lab{
-	@extend .cabecera;
-	background-image: url("../images/CabeceraContacto.png");
-	background-size: cover;
-}
-
-.cabecera--cont{
-	@extend .cabecera;
-	background-image: url("../images/CabeceraLab.png");
-	background-size: cover;
-}
-
-.cabecera--equipo{
-	@extend .cabecera;
-	background-image: url("../images/CabeceraStaff.png");
-	background-size: cover;
-}
-
-
-.cabecera--turnos{
-	@extend .cabecera;
-	background-image: url("../images/CabeceraTurnos.png");
-	background-size: cover;
-}
 
 
 /*ESPECIALIDADES*/
@@ -474,6 +414,11 @@ margin-bottom:60px;
 	color:$colorAzul;
 
 }
+
+#serviciosPacientes{
+	background-color:$colorFondoCele;
+}
+
 #serviciosPacientes h3{
 	font-size:$tituloSecciones;
 	color:$colorAzul;
@@ -483,6 +428,17 @@ margin-bottom:60px;
 	height:300px;
 	}
 
+.serviciosPacientes__caja01{
+	@extend .cajaBlanca;
+	padding:20px;
+	height:250px;
+	h5{
+	color:$colorTurqueza;
+	font-size:$textoNormal;
+	}
+
+}
+
 
 /* DATOS DE CONTACTO */ 
 
@@ -490,21 +446,17 @@ margin-bottom:60px;
 margin-bottom:60px;
 }
 .infoFormTurnos__datos{
-	background-color: #F9F9F9;
-	width: 450px;
+	background-color:$textoGrisClaro;
 	padding:20px;
 
 }
 .infoFormTurnos__texto{
-	width: 300px;
 	margin:10px;
 	text-align:center;
-	margin-left:15%;
 }
 
 .infoFormTurnos__horarios{
-	background-color: #0CCCBE;
-	width: 450px;
+	background-color:$colorTurqueza;
 	padding:20px;
 }
 
@@ -618,6 +570,149 @@ width:75%;
 
 
 
+/*CABECERAS*/
+
+.cabecera{ 
+color:white; 
+height:250px;
+padding-left:150px;
+padding-top:50px;
+line-height: 5px;
+margin-bottom:60px;
+.breadcrumb{
+	color:white;
+	background-color:transparent;
+	padding:1.2rem 0rem;
+	
+}
+.breadcrumb-item a{
+	color:white;
+}
+}
+.breadcrumb-item a:hover{
+	color:$colorTurqueza;
+}
+
+.breadcrumb-item.active{
+	color:white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+	color:white;
+    content: ">";
+}
+
+.cabecera--espe{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraEspe.png");
+	background-size: cover;
+}
+
+.cabecera--lab{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraContacto.png");
+	background-size: cover;
+}
+
+.cabecera--cont{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraLab.png");
+	background-size: cover;
+}
+
+.cabecera--equipo{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraStaff.png");
+	background-size: cover;
+}
+
+
+.cabecera--turnos{
+	@extend .cabecera;
+	background-image: url("../images/CabeceraTurnos.png");
+	background-size: cover;
+}
+
+
+
+
+/*FOOTER*/
+
+
+.ftco-footer {
+	padding: 5em 0 3em 0;	
+}
+
+.footer{
+	padding: 5em 0 3em 0;
+}
+
+.footer__social i{
+	
+	color:$colorTurqueza;
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	background:$colorFondoCele;
+	text-align:center;
+	margin-right:8px;
+	line-height: 40px;
+	
+	&:hover {
+				color: #fff;
+				background:$colorAzul;
+			}
+
+}
+
+
+.block-23 {
+	ul {
+		padding: 0;
+		li {
+			
+			&, > a {
+				display: table;
+				line-height: 1.5;
+				margin-bottom: 15px;
+			}
+			
+			.icon, .text {
+				display: table-cell;
+				vertical-align: top;
+			}
+			.icon {
+				width: 40px;
+				font-size: 18px;
+				padding-top: 2px;
+				color: $colorTurqueza;
+			}
+			
+		}
+	}
+}
+
+footer{ 
+
+	h5{
+	color:$colorAzul;
+ 	text-transform: uppercase;
+ 	font-style: normal;
+ 	font-size: 1.2rem;
+ 	font-weight: 700;}
+
+	li a{
+	color:$textoGris;}
+
+	li a:hover{
+	color:$colorTurqueza;
+	text-decoration:none;}
+
+	span{
+		color:$textoGris;
+		font-size:$textoNormal;
+	}
+}
 
 
 
@@ -640,6 +735,11 @@ width:75%;
 
 
 
+
+
+
+
+/*RESPONSIVE*/
 
 
 @media (max-width:576px) {
@@ -684,9 +784,27 @@ width:75%;
 	height:250px;
 	}
 
+	.laboratorio_texto h3{
+	line-height:normal;}
+
+	.imagenMobile{
+	display:none;
+	}
+	.imagenDesktop{
+	display:none;
+	}
+	.laboratorio__imagen img{
+	height:450pxpx;
+	}
+
+	.cabecera{ 
+	padding-left:20px;
+	padding-top:50px;}
 }
 
-/*IPAD VERTICAL*/
+
+/*IPAD*/
+
 @media (min-width: 576px) and (max-width: 768px) {
 
 	.header__cel{
@@ -716,34 +834,102 @@ width:75%;
 
 	#BajoSlider{
 	height:250px;
-	width:680px;
+	width:768px;
 	}
 	.laboratorio__contenido{
 	padding-left:50px;
 	}
+
+	.imagenDesktop{
+	display:none;
+	}
+	.imagenMobilePhone{
+	display:none;
+	}
+	.especialidades__item img{
+	height:50px;
+	padding:5}
+
+
+
+
 }
 
+/*IPAD VERTICAL*/
+
+@media (min-width: 768px) and (max-width: 992px){
+
+	.laboratorio_texto h3{
+	    width: 100%;
+	    margin-bottom:30px;
+	}
+
+	.laboratorio_texto p{
+
+	  line-height:18px;
+	}
+	.laboratorio__imagen img{
+	border-radius: 50%;
+	}
+
+	.btn-primary{
+	font-size:$textoNormal;
+
+	}
+
+	.imagenDesktop{
+	display:none;
+	}
+	.imagenMobilePhone{
+	display:none;
+	}
+	
+	#bajoSlider{
+	background-color:#E1E9EB;
+	width: 768px;
+	}
+
+	.especialidades__item img{
+	height:50px;}
+}
 
 /*LAPTOP*/
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 992px) and (max-width: 1440px) {
+	
 	.carousel-caption{
-		
 		width:500px;
 		margin-bottom: 35px;
 	}
+
+
 	.especialidades__imagen img{
-		height: 500px;
+	margin-right:0px;
 	}
+
 	.laboratorio__imagen img{
-		height: 500px;
+	margin-left:0px;
+	}
+
+	.imagenMobile{
+	display:none;
+	}
+	.imagenMobilePhone{
+	display:none;
 	}
 }
 
 @media (min-width: 1440px){
 	.carousel-caption{
-	
-	width:500px;
-	margin-bottom: 200px;
+		width:500px;
+		margin-bottom: 200px;
+	}
+	.imagenMobile{
+	display:none;
+	}
+	.imagenMobilePhone{
+	display:none;
 	}
 }
+
+
